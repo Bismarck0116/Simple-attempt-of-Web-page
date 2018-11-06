@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Final</title>
+    <style>
+        h1
+        {
+            text-align:center;
+            text-shadow: 1px 1px 1px #000000;
+        }
+        p{text-align:center;}
+        body
+        {
+            background-image:url(1.jpg);
+            background-size:100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        table
+        {
+            text-align: center;
+        }
+        .divForm
+        {
+            position: absolute;
+            text-align: center;
+            left: 45%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="divForm">
+    <h1>
+        更改简历内容（增、删、改）
+    </h1>
+    <br>
+
+    <form action="resume_revise.jsp" method="post" >
+    <input type="text" name="name" placeholder="请输入姓名" value="zyh">
+    <br>
+    <input type="text" name="sex" placeholder="请输入性别" value="male">
+    <br>
+    <input type="text" name="age" placeholder="请输入年龄" value="18">
+    <br>
+    <input type="text" name="major" placeholder="请输入专业" value="cs">
+    <br>
+    <input type="text" name="mailbox" placeholder="请输入邮箱" value="16281027@bjtu.edu.cn">
+    <br>
+    <input type="submit" value="提交修改结果">
+    </form><br>
+
+    <form action="resume_delete.jsp" method="post" >
+
+        <input type="text" name="name" placeholder="请输入姓名" value="请输入要删除的姓名">
+        <br>
+        <input type="submit" value="提交删除结果">
+    </form><br>
+
+    <form action="resume_insert.jsp" method="post" >
+
+        <input type="text" name="name" placeholder="请输入姓名" value="zyh">
+        <br>
+        <input type="text" name="sex" placeholder="请输入性别" value="male">
+        <br>
+        <input type="text" name="age" placeholder="请输入年龄" value="18">
+        <br>
+        <input type="text" name="major" placeholder="请输入专业" value="cs">
+        <br>
+        <input type="text" name="mailbox" placeholder="请输入邮箱" value="16281027@bjtu.edu.cn">
+        <br>
+        <input type="submit" value="提交增加结果">
+    </form>
+
+<p>
+    <a href="resume.jsp">查看结果</a><br>
+    <a href="index.jsp">返回首页</a>
+</p>
+</div>
+</body>
+</html>

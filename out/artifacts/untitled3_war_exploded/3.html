@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Final Experiment</title>
+    <style>
+    h1
+    {
+    text-align:center;
+    text-shadow: 1px 1px 1px #000000;
+    }
+    p{text-align:center;}
+    body
+    {
+    background-image:url(1.jpg);
+    background-size:100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    </style>
+
+    <script type="text/javascript">
+        function changeColor()
+        {
+            var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray|#234|#534";
+            color=color.split("|");
+            var xuan = document.getElementsByTagName("p");//获得元素
+
+            for(var i=0;i<xuan.length;i++)
+            {
+                xuan[i].style.color=color[parseInt(Math.random() * color.length)];
+            }
+        }
+        setInterval("changeColor()",200);
+    </script>
+</head>
+<body>
+<H1>科研兴趣</H1>
+<p>
+    有什么科研兴趣？<br>
+    什么科研兴趣？<br>
+    么科研兴趣？<br>
+    科研兴趣？<br>
+    研兴趣？<br>
+    兴趣？<br>
+    趣？<br>
+    ？<br>
+    <a href="index.jsp">看完了 返回主页</a>
+</p>
+
+</body>
+</html>
